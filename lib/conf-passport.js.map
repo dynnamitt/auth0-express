@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "conf-passport.js",
+  "sourceRoot": "..",
+  "sources": [
+    "src/conf-passport.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;;AAAA"
+}

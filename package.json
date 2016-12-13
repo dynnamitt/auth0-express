@@ -1,0 +1,35 @@
+{
+  "name": "port.er",
+  "version": "1.0.0",
+  "description": "proxy w security",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register",
+    "pretest": "coffee -o lib -mc src",
+    "clean": "rm -rf -v lib",
+    "prestart": "npm test",
+    "start": "node lib",
+    "watch": "env $(cat ~/.auth0.env) nodemon -e 'coffee' --debug --exec 'npm start'"
+  },
+  "keywords": [
+    "proxy",
+    "security",
+    "frontend"
+  ],
+  "author": "dynnamitt",
+  "license": "ISC",
+  "dependencies": {
+    "connect-ensure-login": "^0.1.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "http-proxy": "^1.15.2",
+    "passport": "^0.3.2",
+    "passport-auth0": "^0.6.0",
+    "serve-favicon": "^2.3.2"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.11.1",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0"
+  }
+}
