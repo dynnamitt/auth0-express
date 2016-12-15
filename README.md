@@ -1,3 +1,3 @@
-# Simpler auth0/basic-setup than official doc
+# Auth0/basic-setup with http-proxy
 
-Coffeescript 
+Coffeescript sample project
